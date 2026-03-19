@@ -159,7 +159,23 @@ def send_email_alert(company, ticker, price, change, has_threats, receiver_email
 # ==========================================
 @app.route('/scan_cyber_threats', methods=['POST'])
 def scan_cyber_threats():
-    data = request.json
+    # Grab the raw, unformatted bytes directly from the network
+    raw_bytes = request.data
+    print(f"🔍 RAW BYTES FROM AIRIA: {raw_bytes}")
+    
+    data = {}
+    if raw_bytes:
+        try:
+            # Manually force the bytes into a JSON dictionary
+            data = json.loads(raw_bytes)
+        except Exception as e:
+            print(f"⚠️ JSON Parse Error: {e}")
+            
+    # Fallback just in case
+    if not data:
+        data = request.get_json(force=True, silent=True) or request.form.to_dict() or request.args.to_dict()
+        
+    print(f"🚨 FINAL PARSED DATA: {data}")
     company_name = data.get("company_name")
     hours = data.get("hours_back", 24)
     print(f"🤖 AIRIA INCOMING REQUEST: Scanning {company_name} for threats...")
@@ -169,7 +185,23 @@ def scan_cyber_threats():
 
 @app.route('/check_financials', methods=['POST'])
 def check_financials():
-    data = request.json
+    # Grab the raw, unformatted bytes directly from the network
+    raw_bytes = request.data
+    print(f"🔍 RAW BYTES FROM AIRIA: {raw_bytes}")
+    
+    data = {}
+    if raw_bytes:
+        try:
+            # Manually force the bytes into a JSON dictionary
+            data = json.loads(raw_bytes)
+        except Exception as e:
+            print(f"⚠️ JSON Parse Error: {e}")
+            
+    # Fallback just in case
+    if not data:
+        data = request.get_json(force=True, silent=True) or request.form.to_dict() or request.args.to_dict()
+        
+    print(f"🚨 FINAL PARSED DATA: {data}")
     company_name = data.get("company_name")
     print(f"🤖 AIRIA INCOMING REQUEST: Checking financials for {company_name}...")
     
@@ -187,7 +219,23 @@ def check_financials():
 
 @app.route('/send_alerts', methods=['POST'])
 def send_alerts():
-    data = request.json
+    # Grab the raw, unformatted bytes directly from the network
+    raw_bytes = request.data
+    print(f"🔍 RAW BYTES FROM AIRIA: {raw_bytes}")
+    
+    data = {}
+    if raw_bytes:
+        try:
+            # Manually force the bytes into a JSON dictionary
+            data = json.loads(raw_bytes)
+        except Exception as e:
+            print(f"⚠️ JSON Parse Error: {e}")
+            
+    # Fallback just in case
+    if not data:
+        data = request.get_json(force=True, silent=True) or request.form.to_dict() or request.args.to_dict()
+        
+    print(f"🚨 FINAL PARSED DATA: {data}")
     company_name = data.get("company_name", "Unknown")
     ticker = data.get("ticker", "N/A")
     price = data.get("price", "N/A")
