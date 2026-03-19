@@ -1,6 +1,10 @@
 # 🛡️ FinTech Risk Agent: Autonomous Threat Intelligence Pipeline
 
 **Built for the Airia AI Agents Hackathon**
+### 🔗 Live Demo
+**[Test the FinTech Risk Agent on Airia Here](https://explore.airia.com/YOUR-LINK-HERE](https://community.airia.ai/import-agent/E2ZWpUsX8upZ4wQMEWHJVm0dLlNxhQi3rK5gy2lR6zt )**
+
+> **⚠️ Judge's Note Regarding the Live Link:** > Because this agent executes real Python code to interact with APIs and send emails, the backend is currently hosted locally via a secure Ngrok tunnel. If the agent fails to respond in the Airia chat, the local tunnel may be temporarily offline. **Please refer to our 4-minute demo video** to see the full autonomous pipeline and omnichannel webhook execution in action!
 
 ## 💡 The Inspiration
 In modern algorithmic trading, when a major cyber breach hits Bloomberg news, the market prices in the drop within milliseconds. Portfolio managers are always 24 hours too late. We wanted to capture the **"Golden Window"**—the critical time between a vulnerability being logged in the National Vulnerability Database (NVD) and the broader market reacting.
