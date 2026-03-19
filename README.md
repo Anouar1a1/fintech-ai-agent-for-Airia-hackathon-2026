@@ -2,7 +2,7 @@
 
 **Built for the Airia AI Agents Hackathon**
 ### 🔗 Live Demo
-**[Test the FinTech Risk Agent on Airia Here](https://explore.airia.com/YOUR-LINK-HERE](https://community.airia.ai/import-agent/E2ZWpUsX8upZ4wQMEWHJVm0dLlNxhQi3rK5gy2lR6zt )**
+**[Test the FinTech Risk Agent on Airia Here]([https://explore.airia.com/YOUR-LINK-HERE](https://community.airia.ai/import-agent/E2ZWpUsX8upZ4wQMEWHJVm0dLlNxhQi3rK5gy2lR6zt)]**
 
 > **⚠️ Judge's Note Regarding the Live Link:** > Because this agent executes real Python code to interact with APIs and send emails, the backend is currently hosted locally via a secure Ngrok tunnel. If the agent fails to respond in the Airia chat, the local tunnel may be temporarily offline. **Please refer to our 4-minute demo video** to see the full autonomous pipeline and omnichannel webhook execution in action!
 
