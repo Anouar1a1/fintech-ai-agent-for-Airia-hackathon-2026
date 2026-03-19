@@ -39,6 +39,32 @@ This project leverages a hybrid cloud/local architecture to keep memory footprin
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Anouar1a1/fintech-ai-agent-for-Airia-hackathon-2026.git
-   cd 
+Install dependencies:
+   ```bash
+   pip install Flask requests
+   ```
+Configure Credentials:
+Open server.py and update the configuration block at the top with your specific Webhook URLs and Email credentials. (Note: Never commit your real passwords to version control!)
+
+Start the Flask Server:
+Bash
+
+python3 server.py
+
+The server will start on http://127.0.0.1:5000
+
+Open the Ngrok Tunnel:
+In a new terminal window, run:
+Bash
+
+    ngrok http 5000
+
+    Connect to Airia:
+    Copy the generated https://...ngrok-free.app URL and paste it into the Custom API Tool settings inside your Airia dashboard, ensuring you append the correct route (e.g., /scan_cyber_threats).
+
+🔮 What's Next
+
+Currently, the agent is triggered manually via chat. The next evolution of the FinTech Risk Agent is a cron-based automation loop that scans the S&P 500 entirely in the background every hour, autonomously firing Adaptive Cards into Teams the second a critical CVE is published without requiring any human prompting.
+
 Made by:
 **Anouar, Nouhaila and Ayoub**
