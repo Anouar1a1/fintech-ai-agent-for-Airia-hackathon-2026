@@ -40,3 +40,5 @@ This project leverages a hybrid cloud/local architecture to keep memory footprin
    ```bash
    git clone [https://github.com/yourusername/fintech-risk-agent.git](https://github.com/yourusername/fintech-risk-agent.git)
    cd fintech-risk-agent
+Made by:
+**Anouar, Nouhaila and Ayoub**
