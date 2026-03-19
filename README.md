@@ -38,7 +38,7 @@ This project leverages a hybrid cloud/local architecture to keep memory footprin
 ### Setup Instructions
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/fintech-risk-agent.git](https://github.com/yourusername/fintech-risk-agent.git)
-   cd fintech-risk-agent
+   git clone https://github.com/Anouar1a1/fintech-ai-agent-for-Airia-hackathon-2026.git
+   cd 
 Made by:
 **Anouar, Nouhaila and Ayoub**
